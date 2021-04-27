@@ -66,7 +66,7 @@ Customisable parameters :
 
 </com.github.florent37.bubbletab.BubbleTab>
 
-<androidx.viewpager.widget.ViewPager
+<androidx.viewpager2.widget.ViewPager2
     android:id="@+id/viewPager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
@@ -75,7 +75,7 @@ Customisable parameters :
 Then bound it with your viewPager
 
 ```csharp
-bubbleTab.SetupWithViewPager(viewPager);
+bubbleTab.SetupWithViewPager(viewPager2);
 ```
 
 # Customisation
