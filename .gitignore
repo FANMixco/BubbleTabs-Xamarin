@@ -338,3 +338,8 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+.MigrationBackup
+MigrationBackup/d0a66673/BubbleTabs.Xamain/BubbleTabs.Xamain.csproj
+MigrationBackup/d0a66673/BubbleTabs.Xamain/packages.config
+MigrationBackup/d0a66673/BubbleTabs.Xamain/NuGetUpgradeLog.html

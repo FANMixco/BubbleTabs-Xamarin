@@ -2,7 +2,7 @@
 using Android.OS;
 using Android.Runtime;
 using AndroidX.AppCompat.App;
-using AndroidX.ViewPager.Widget;
+using AndroidX.ViewPager2.Widget;
 using BubbleTabs.Adapters;
 using Com.Github.Florent37.Bubbletab;
 
@@ -19,9 +19,9 @@ namespace BubbleTabs
             SetContentView(Resource.Layout.bubbletab_activity_main);
 
             var bubbleTab = FindViewById<BubbleTab>(Resource.Id.bubbleTab);
-            var viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
+            var viewPager = FindViewById<ViewPager2>(Resource.Id.viewPager);
 
-            viewPager.Adapter = new FakeAdapter(SupportFragmentManager, 1);
+            viewPager.Adapter = new FakeAdapter(this);
 
             bubbleTab.SetupWithViewPager(viewPager);
         }
