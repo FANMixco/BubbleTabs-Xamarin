@@ -1,37 +1,130 @@
-## Welcome to GitHub Pages
+Based on Florent CHAMPIGNY's version: https://github.com/florent37/BubbleTab
 
-You can use the [editor on GitHub](https://github.com/FANMixco/BubbleTabs-Xamarin/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Put some bubble in your tabs and give your apps a supa fresh style!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![screen](https://raw.githubusercontent.com/florent37/BubbleTab/master/media/withScreen_cropped.png)](https://github.com/florent37/BubbleTab)
 
-### Markdown
+# Usage
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[![screen](https://raw.githubusercontent.com/florent37/BubbleTab/master/media/video.gif)](https://github.com/florent37/BubbleTab)
 
-```markdown
-Syntax highlighted code block
+Add a BubbleTab with your icons on the layout.xml
 
-# Header 1
-## Header 2
-### Header 3
+Customisable parameters :
+- circleColor
+- circleRatio
 
-- Bulleted
-- List
+```xml
+<com.github.florent37.bubbletab.BubbleTab
+        android:id="@+id/bubbleTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:background="@android:color/white"
+        android:elevation="10dp"
 
-1. Numbered
-2. List
+        app:bubbleTab_circleColor="@color/colorAccent"
+        app:bubbleTab_circleRatio="1.25"
+        >
 
-**Bold** and _Italic_ and `Code` text
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_hourglass_selector" />
 
-[Link](url) and ![Image](src)
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_event_selector" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_query_selector" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_search_selector" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:src="@drawable/bubbletab_ic_home_selector" />
+
+</com.github.florent37.bubbletab.BubbleTab>
+
+<androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Then bound it with your viewPager
 
-### Jekyll Themes
+```csharp
+bubbleTab.SetupWithViewPager(viewPager2);
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FANMixco/BubbleTabs-Xamarin/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Customisation
 
-### Support or Contact
+To display your home icon with a different color / content if selected / unselected
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Simply use selectors !
+
+[![screen](https://raw.githubusercontent.com/florent37/BubbleTab/master/media/different_icon.gif)](https://github.com/florent37/BubbleTab)
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/bubbletab_ic_account_selected"/>
+    <item android:drawable="@drawable/bubbletab_ic_account"/>
+</selector>
+```
+
+# Download
+
+|  Package  |Latest Release|
+|:----------|:------------:|
+|**BubbleTabs.Xamarin**|[![NuGet Badge Xamarin-MaterialSearchBar](https://buildstats.info/nuget/BubbleTabs.Xamarin)](https://www.nuget.org/packages/BubbleTabs.Xamarin/)|
+
+```
+Install-Package BubbleTabs.Xamarin -Version 2.0.0.1
+```
+
+# Credits
+
+Author: Federico Navarrete
+
+<a href="https://www.linkedin.com/in/fanmixco">
+  <img alt="Follow me on LinkedIn"
+       src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
+</a>
+
+
+License
+--------
+
+    Copyright 2019-2020 fanmixco, Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
