@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTabs.Xamain", "BubbleTabs.Xamain\BubbleTabs.Xamain.csproj", "{A4EF9768-8E69-4E93-B0C6-F278D8A73743}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTabs.Xamarin", "BubbleTabs.Xamain\BubbleTabs.Xamarin.csproj", "{A4EF9768-8E69-4E93-B0C6-F278D8A73743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30317.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTabs", "BubbleTabs\BubbleTabs.csproj", "{7F89EA92-7497-4060-A554-04B95D742798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTabs.Xamain", "BubbleTabs.Xamain\BubbleTabs.Xamain\BubbleTabs.Xamain.csproj", "{A4EF9768-8E69-4E93-B0C6-F278D8A73743}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleTabs.Xamarin", "BubbleTabs.Xamarin\BubbleTabs.Xamarin\BubbleTabs.Xamarin.csproj", "{A4EF9768-8E69-4E93-B0C6-F278D8A73743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
