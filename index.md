@@ -1,3 +1,7 @@
+<a href="https://github.com/sponsors/FANMixco/" target="_blank">
+   <img src="https://i.stack.imgur.com/zoyl1.png" alt="sponsor" />
+</a>
+
 Based on Florent CHAMPIGNY's version: https://github.com/florent37/BubbleTab
 
 Put some bubble in your tabs and give your apps a supa fresh style!
