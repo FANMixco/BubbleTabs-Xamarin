@@ -1,3 +1,7 @@
+<a href="https://github.com/sponsors/FANMixco/" target="_blank">
+   <img src="https://raw.githubusercontent.com/FANMixco/Xamarin-SearchBar/master/bmc-rezr5vpd.gif" alt="sponsor" />
+</a>
+
 # BubbleTab-Xamarin
 
 Based on Florent CHAMPIGNY's version: https://github.com/florent37/BubbleTab
