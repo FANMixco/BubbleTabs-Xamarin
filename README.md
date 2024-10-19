@@ -100,9 +100,9 @@ Simply use selectors !
 
 # Download
 
-|  Package  |Latest Release|
-|:----------|:------------:|
-|**BubbleTabs.Xamarin**|[![NuGet Badge Xamarin-MaterialSearchBar](https://buildstats.info/nuget/BubbleTabs.Xamarin)](https://www.nuget.org/packages/BubbleTabs.Xamarin/)|
+|Latest Release|Downloads|
+|:------------:|:------------:|
+|[![NuGet Badge BubbleTabs.Xamarin](https://img.shields.io/nuget/v/BubbleTabs.Xamarin)](https://www.nuget.org/packages/BubbleTabs.Xamarin/)|[![NuGet Badge BubbleTabs.Xamarin](https://img.shields.io/nuget/dt/BubbleTabs.Xamarin)](https://www.nuget.org/packages/BubbleTabs.Xamarin/)|
 
 ```
 Install-Package BubbleTabs.Xamarin -Version 2.0.0.1
